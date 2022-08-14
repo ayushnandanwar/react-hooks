@@ -1,24 +1,26 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"; // to use JSX
+import { useState } from "react";
 
-function App() {
+/*
+React hooks are the new features introduced in the React 16.8 version.
+
+
+*/
+
+import Hooks1 from "./Components/Hooks1"; // #29
+import Hook2 from "./Components/Hook2";
+import Events from "./Components/Events";
+
+import Forms from "./Components/Forms";  // #34 Forms in ReactJs
+const App = () => {
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Hooks1/> 
+      <Hook2/>
+      <Events/>
+      <Forms/>
+    </>
   );
 }
 
